@@ -1,0 +1,25 @@
+.Cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom yang ukurannya sama */
+  gap: 10px;
+}
+
+.parentContainer {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .Cards {
+    grid-template-columns: 1fr; /* Pada resolusi lebih kecil, semua elemen akan berada dalam satu kolom */
+  }
+  
+  .parentContainer {
+    height: 9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Cards {
+    width: 90%;
+  }
+}
